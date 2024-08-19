@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
+* {
+    color: hsl(217, 90%, 20%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+#menu {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#menu h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#menu select, #menu button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#menu button {
+    background-color: #0300cf;
+    color: white;
+    cursor: pointer;
+}
+
+#menu button:hover {
+    background-color: #4964ff;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif; /* Une police élégante et sophistiquée */
+    font-size: 2em; /* Grande taille pour attirer l'attention */
+    font-weight: 700; /* Un poids élevé pour un look imposant */
+    color: #30373d; /* Couleur sombre et classique */
+    text-align: center; /* Centrer le texte */
+    text-transform: uppercase; /* Majuscules pour un impact plus fort */
+    letter-spacing: 0.05em; /* Espacement subtil des lettres */
+    background-color: #ecf0f1; /* Fond léger pour contraster avec le texte */
+    padding: 20px; /* Espace intérieur pour ajouter de la présence */
+    border-radius: 10px; /* Coins arrondis pour une touche de douceur */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ombre pour un effet de profondeur */
+    margin-bottom: 40px; /* Espacement inférieur pour séparer du reste du contenu */
+    position: relative; /* Position relative pour les effets décoratifs */
+}
+
+h1::before {
+    content: ''; /* Pseudo-élément pour la décoration */
+    position: absolute; /* Absolument positionné par rapport à h1 */
+    left: 50%; /* Centré horizontalement */
+    bottom: -10px; /* Juste en dessous du titre */
+    transform: translateX(-50%); /* Correction de la position centrée */
+    width: 60%; /* Largeur de la ligne décorative */
+    height: 4px; /* Épaisseur de la ligne */
+    background-color: #2c00a5; /* Couleur bleue vive pour contraste */
+    border-radius: 2px; /* Coins arrondis pour adoucir la ligne */
+}
+
+h1::after {
+    content: ''; /* Deuxième pseudo-élément pour plus de style */
+    position: absolute; /* Absolument positionné par rapport à h1 */
+    left: 50%; /* Centré horizontalement */
+    bottom: -20px; /* Un peu plus bas pour créer un effet de double ligne */
+    transform: translateX(-50%); /* Correction de la position centrée */
+    width: 30%; /* Plus petite ligne pour un effet stylé */
+    height: 4px; /* Plus fine que la première */
+    background-color: #e70000; /* Vert pour un contraste supplémentaire */
+    border-radius: 2px; /* Coins arrondis pour adoucir la ligne */
+}
+
+
+
+
+/* Style pour les petits écrans */
+@media (max-width: 480px) {
+    .app {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    #question {
+        font-size: 18px;
+    }
+
+    #check-btn, #next {
+        width: 100%; /* Les boutons prennent toute la largeur sur mobile */
+        padding: 12px;
+    }
+}
+
+body{
+    background-color: #646464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.app{
+    background-color: #e2e2e2; /* Fond blanc pour le contenu */
+    width: 100%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 8px ;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#question{
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    cursor: default
+}
+
+.position{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#answer{
+    width: calc(100% - 20px); /* Largeur maximale avec des marges internes */
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 2px solid #b0bec5; /* Bordure grise douce */
+    border-radius: 5px; /* Coins arrondis */
+    box-sizing: border-box;
+}
+
+/*
+.position button{
+    background:#001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 75px;
+    border:0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius : 4px;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+*/
+
+#check-btn {
+    background-color: #4CAF50; /* Vert vif pour attirer l'attention */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animation douce sur le changement de couleur */
+}
+
+#check-btn:hover {
+    background-color: #45a049; /* Changement de couleur au survol */
+}
+
+#next {
+    background-color: #090088; /* Bleu pour différencier du bouton de validation */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#next:hover {
+    background-color: #1976D2; /* Changement de couleur au survol */
+}
+
+
+#answer:disabled{
+    cursor:no-drop ;
+}
+
+
+/* Etats de réponse */
+
+.neutre{
+    background-color: #dbdbdb81; /* Vert clair pour correct */
+    border-color: #505752;
+    color: hsl(217, 90%, 20%);
+}
+
+.correct {
+    background-color: #d4edda; /* Vert clair pour correct */
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.incorrect {
+    background-color: #f8d7da; /* Rouge clair pour incorrect */
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* Transition douce pour le changement de couleur */
+#answer {
+    transition: background-color 0.4s, color 0.4s;
+}
+
+/* Animation de tremblement pour incorrect */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.incorrect {
+    animation: shake 0.5s;
+}
+
+/* Animation de zoom pour correct */
+@keyframes zoom {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.correct {
+    animation: zoom 0.5s;
+}
+
+/* Conteneur de la barre de progression */
+.progress-container {
+    width: 100%;
+    background-color: #a7a7a7; /* Gris clair pour le fond */
+    border-radius: 8px;
+    margin: 0 0 20px   0;
+    height: 20px;
+    overflow: hidden;
+}
+
+/* Barre de progression elle-même */
+#progress-bar {
+    width: 0; /* La largeur commencera à 0% */
+    height: 100%;
+    background-color: #4CAF50; /* Vert pour la progression */
+    transition: width 0.3s ease; /* Transition douce lors de la progression */
+    border-radius: 8px;
+}
+
+
