@@ -1,5 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
 
+
+/* Styles généraux pour les petits écrans */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        height: auto;
+        display: block;
+    }
+
+    .app {
+        width: 100%;
+        max-width: 100%;
+        margin: 20px 0;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    #menu {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    #menu h2 {
+        font-size: 1em;
+    }
+
+    #menu select, #menu button {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    #question {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    #answer {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #check-btn, #next {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .progress-container {
+        height: 15px;
+    }
+
+    #progress-bar {
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    #menu h2 {
+        font-size: 0.9em;
+    }
+
+    #menu select, #menu button {
+        font-size: 0.8em;
+    }
+
+    #question {
+        font-size: 16px;
+    }
+
+    #answer {
+        font-size: 12px;
+    }
+
+    #check-btn, #next {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .progress-container {
+        height: 10px;
+    }
+}
+
+
+
+
+
 * {
     color: hsl(217, 90%, 20%);
     margin: 0;
@@ -44,7 +141,7 @@
 
 h1 {
     font-family: 'Playfair Display', serif; /* Une police élégante et sophistiquée */
-    font-size: 2em; /* Grande taille pour attirer l'attention */
+    font-size: 20px; /* Grande taille pour attirer l'attention */
     font-weight: 700; /* Un poids élevé pour un look imposant */
     color: #30373d; /* Couleur sombre et classique */
     text-align: center; /* Centrer le texte */
@@ -83,24 +180,6 @@ h1::after {
 }
 
 
-
-
-/* Style pour les petits écrans */
-@media (max-width: 480px) {
-    .app {
-        padding: 15px;
-        max-width: 100%;
-    }
-
-    #question {
-        font-size: 18px;
-    }
-
-    #check-btn, #next {
-        width: 100%; /* Les boutons prennent toute la largeur sur mobile */
-        padding: 12px;
-    }
-}
 
 body{
     background-color: #646464;
