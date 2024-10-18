@@ -137,7 +137,7 @@ function showQuestion(){
                     correctAudio.play();
                     questionElement.classList.add('correct');
                     questionElement.classList.remove('incorrect');
-                    document.getElementById("question").textContent =`[[TRUE]] other answer → ${currentQuestion.answer}`
+                    document.getElementById("question").textContent =`\u2714 other answer → ${currentQuestion.answer}`
                     score++
                     }
                 else{
@@ -145,7 +145,7 @@ function showQuestion(){
                     incorrectAudio.play();
                     questionElement.classList.add('incorrect');
                     questionElement.classList.remove('correct');
-                    document.getElementById("question").textContent = `[[FALSE]] ${currentQuestion.QR} → ${currentQuestion.answer}`
+                    document.getElementById("question").textContent = `\u2716 ${currentQuestion.QR} → ${currentQuestion.answer}`
                 }
             }
             }else{
@@ -154,13 +154,13 @@ function showQuestion(){
                     incorrectAudio.play();
                     questionElement.classList.add('incorrect');
                     questionElement.classList.remove('correct');
-                    document.getElementById("question").textContent = `[[FALSE]] ${currentQuestion.QR} → ${currentQuestion.answer}`
+                    document.getElementById("question").textContent = `\u2716 ${currentQuestion.QR} → ${currentQuestion.answer}`
                 }else{
                     console.log("4.Boucle simple réponses VRAI \n");
                     correctAudio.play();
                     questionElement.classList.add('correct');
                     questionElement.classList.remove('incorrect');
-                    document.getElementById("question").textContent = `[[TRUE]]`
+                    document.getElementById("question").textContent = `\u2714`
                     score++
                     }
             }
