@@ -10,29 +10,30 @@
 <body>
     <div class="app">
         <!-- Menu Interactif -->
-         <h1>QUESTION/REPONSE</h1>
-    <div id="menu">
-        <h2>Choisissez un Thème</h2>
-        <select id="theme-select">
-            <option value="phrasal-verbs">Phrasal Verbs</option>
-            <option value="daily-words">Mots du Quotidien</option>
-            <option value="pisu">Easy mode</option>
-        </select>
+        <h1>QUESTION/REPONSE</h1>
+        <div id="menu">
+            <h2>Choisissez un Thème</h2>
+            <select id="theme-select">
+                <option value="phrasal-verbs">Phrase verbale</option>
+                <option value="daily-words">Preparation TOEIC</option>
+                <option value="pisu">Phrase du quotidien</option>
+            </select>
 
-        <button id="start-btn">Start</button>
-    </div>
-        <div id="displayApp">
-        <div class="progress-container">
-            <div id="progress-bar"></div>
+            <button id="start-btn">Start</button>
         </div>
-        <div id="question">Question goes here</div>
-        <div class="position">
-        <input type="search" id="answer"  value="" maxlength="80">  
-        <button id="check-btn" >Valider</button>
-        <button id="next" >Next</button>
+        <div id="displayApp">
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <div id="question">Question goes here</div>
+            <div class="position">
+                <input type="search" id="answer"  value="" maxlength="80">  
+                <button id="check-btn" >Valider</button>
+                <button id="next" >Next</button>
+            </div>
+        </div>
     </div>
-    </div>
-    </div>
+
     <audio id="correct-audio" src="GoodAnswer.mp3"></audio>
     <audio id="incorrect-audio" src="WrongAnswer.mp3"></audio>
     <script type="module" src="script.js"></script>
@@ -41,6 +42,7 @@
     <script>/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
         particlesJS.load('particles-js', '/particlesjs-config.json', function() {
           console.log('callback - particles.js config loaded');
-        });</script>
+        });
+    </script>
 </body>
 </html>

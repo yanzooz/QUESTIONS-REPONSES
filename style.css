@@ -95,8 +95,6 @@
 
 
 
-
-
 * {
     color: hsl(217, 90%, 20%);
     margin: 0;
@@ -182,7 +180,6 @@ h1::after {
 
 
 body{
-    background-image: url(4855443.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,7 +188,8 @@ body{
 
 
 .app{
-    background-image: url(appFondEcran.jpg);
+    background-image: url("appFondEcran.jpg");
+    background-position: center;
     opacity: 0.9;
     width: 100%;
     max-width: 600px;
